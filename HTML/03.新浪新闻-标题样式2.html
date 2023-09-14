@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新浪新闻标题内容</title>
+    <style>
+        h1{
+            color: #000000;
+        }
+
+        span{
+            color: grey;
+        }
+
+        /* 优先级中等 */
+        .cls{
+            color: green;
+        }
+
+        /* 优先级最高 */
+        #cid{
+            color: red;
+            font-size: 30px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <img src="img/news_logo.png"> 新浪政务 > 正文   
+
+
+    <h1 >XXXXX</h1>
+    <hr>
+
+    <!-- 组合行内元素 -->
+    <span>time</span>
+    <span id="cid">content1</span>
+    <span class="cls">content1</span>
+    <hr>
+</body>
+</html>
