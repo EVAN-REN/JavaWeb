@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/vue.js"></script>
+</head>
+<!-- vue是一套前端框架，免除原生javascript的DOM操作
+基于MVVM思想，View(前端视图)--ViewModel(框架)--Model(JS数据)，实现数据的双向绑定 -->
+<body>
+    <div id="app">
+        <input type="text" v-model="message">
+        {{message}} 
+        <!-- 差值表达式（变量，三元运算符，函数调用，算术运算） -->
+    </div>
+</body>
+<script>
+    new Vue({
+        el: "#app", //vue接管区域
+        data:{
+            message: "Hello Vue"
+        }
+    })
+
+</script>
+</html>

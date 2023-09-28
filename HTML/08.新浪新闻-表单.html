@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+
+</head>
+<body>
+    <!-- action指定表单提交的url，默认不填为当前页面 -->
+    <!-- get：在url后面拼接表单数据，比如：?username=Tom&age=12，url长度有限制，不填默认为get -->
+    <!-- post：在消息体中传递数据，参数无大小限制 -->
+    <form action="" method="post">
+        用户名：<input type="text" name="username">
+        年龄：<input type="text" name="age">
+
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

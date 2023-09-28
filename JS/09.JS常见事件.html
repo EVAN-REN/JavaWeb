@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onclick="load()">
+    <form action="" style="text-align: center;" onsubmit="subfn()">
+        <input type="text" name="username" onblur="bfn()" onfocus="ffn()" onkeydown="kfn()">
+
+        <input type="submit" value="提交">
+
+        <input type="button" value="单击事件" onclick="fn1()">
+    </form>
+
+    <br><br><br>
+
+    <table width="800px" border="1" cellspacing="0" align="center" onmouseover="over()" onmouseout="out()">
+        <tr align="center">
+            <td>学号</td>
+            <td>姓名</td>
+            <td>分数</td>
+            <td>评语</td>
+        </tr>
+        <tr align="center">
+            <td>001</td>
+            <td>张三</td>
+            <td>90</td>
+            <td>优秀</td>
+        </tr>
+        <tr align="center">
+            <td>002</td>
+            <td>李四</td>
+            <td>92</td>
+            <td>优秀</td>
+        </tr>
+    </table>
+</body>
+<script>
+    // unload页面加载完后触发
+    function onload(){
+        console.log("页面加载完成");
+    }
+
+    // onclick鼠标单击事件
+    function fn1(){
+        console.log("我被点击了 ");
+    }
+
+    // onfocus元素获得焦点
+    function ffn(){
+        console.log("获得焦点 ");
+    }
+
+    // onblur元素失去焦点
+    function bfn(){
+        console.log("失去焦点 ");
+    }
+
+    // onkeydown键盘按下
+    function kfn(){
+        console.log("键盘按下 ");
+    }
+
+    // onmouseover鼠标移到元素上
+    function over(){
+        console.log("鼠标移到元素上 ");
+    }
+
+    // onmouseout鼠标移出元素
+    function out(){
+        console.log("鼠标移出元素 ");
+    }
+
+    // onsubmit提交
+    function subfn(){
+        alert("提交 ");
+    }
+
+</script>
+</html>

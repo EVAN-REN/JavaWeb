@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <a v-bind:href="url">链接1</a>
+        <a :href="url">链接2</a>
+        <br>
+        <input type="text" v-model="url">
+        
+        <br>
+        <input type="button" value="点我" v-on:click="handle()">
+        <input type="button" value="点我" @click="handle()">
+        
+    </div>
+</body>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            url: "https://www.baidu.com"
+        },
+        methods: {
+            handle: function(){
+                alert("你点我了一下");
+            }
+        },
+    })
+
+</script>
+</html>
