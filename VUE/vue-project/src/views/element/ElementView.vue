@@ -17,15 +17,15 @@
       <el-table-column prop="address" label="地址"> </el-table-column>
     </el-table>
 
-    <!-- pagination -->
-    <!-- <el-pagination
+    <!-- pagination --> 
+    <el-pagination
       background
-      layout="total, size, prev, pager, next, jumper"
+      layout="total, sizes, prev, pager, next, jumper"
       :total="1000"
       @size-change="handleSizeChange"
       @current-change="handleCurrentChange"
     >
-    </el-pagination> -->
+    </el-pagination>
 
     <!-- dialog+table -->
     <el-button type="text" @click="dialogTableVisible = true"
@@ -152,12 +152,12 @@ export default {
     };
   },
   methods: {
-    // handleSizeChange:function(val){
-    //     alert("每页记录数变化" + val);
-    // },
-    // handleCurrentChange:function(val){
-    //     alert("页码发生变化" + val);
-    // },
+    handleSizeChange:function(val){
+        alert("每页记录数变化" + val);
+    },
+    handleCurrentChange:function(val){
+        alert("页码发生变化" + val);
+    },
     test: function () {
       alert("hello");
     },

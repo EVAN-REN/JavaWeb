@@ -1,14 +1,17 @@
 <template>
   <div>
     <!-- <h1>{{message}}</h1> -->
-    <element-view></element-view>
+    <!-- <element-view></element-view> -->
+    <!-- <emp-view-vue></emp-view-vue> -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import ElementView from './views/element/ElementView.vue'
+// import EmpViewVue from './views/tlias/EmpView.vue'
+// import ElementView from './views/element/ElementView.vue'
 export default {
-  components: { ElementView },
+  components: {/*EmpViewVue*//* ElementView*/},
   data(){
     return {
       message: "Hello Vue"
